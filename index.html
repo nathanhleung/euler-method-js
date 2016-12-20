@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Euler's Method Calculator</title>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width,initial-scale=1' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' />
+  </head>
+  <body>
+    <label>dy/dx Equation (in terms of x and y)</label><br />
+    <input type="text" id="equation" /><br />
+    <label>Initial f(0)</label><br />
+    <input type="number" id="initial" /><br />
+    <label>Steps</label><br />
+    <input type="number" id="steps" /><br />
+    <label>Target</label><br />
+    <input type="number" id="target" /><br />
+    <button id="solve">
+      Solve
+    </button>
+    <pre id="result"></pre>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.8.1/math.min.js'></script>
+    <script src='./index.js'></script>
+  </body>
+</html>
